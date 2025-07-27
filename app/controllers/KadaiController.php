@@ -29,4 +29,23 @@ class KadaiController
     // viewを呼ぶ
     include(__DIR__ . '/../views/kadai_detail.php');
   }
+
+  /**
+   * 課題テーマNoと開発者IDから特定の課題を表示
+   * @param int $kadai_no 課題テーマNo
+   * @param int $developer_id 開発者ID
+   */
+  public function showByKadaiNoAndDeveloperId(int $kadai_no, int $developer_id)
+  {
+    $kadai = $this->kadaiModel->findByKadaiNoAndDeveloperId($kadai_no, $developer_id);
+    if(!$kadai){
+      exit('該当する課題が見つかりません');
+    }
+
+    $comments = $this->commentModel->findByKadaiId($kadai['id']);
+    $user_id = $_SESSION['user_id'] ?? null;
+
+    // viewを呼ぶ
+    include(__DIR__ . '/../views/kadai_detail.php');
+  }
 }

@@ -11,7 +11,7 @@
   <ul>
     <?php foreach ($kadai_themes as $kadai_theme): ?>      
     <li>
-      <a href="index.php?page=kadai_theme&kadai_no=<?= htmlspesialchars($kadai_theme['kadai_no']) ?>">
+      <a href="index.php?page=kadai_theme&kadai_no=<?= htmlspecialchars($kadai_theme['kadai_no']) ?>">
         <?= htmlspecialchars($kadai_theme['kadai_name']) ?>
       </a>
     </li>

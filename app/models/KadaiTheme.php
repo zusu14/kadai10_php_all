@@ -1,6 +1,6 @@
 <?php
 
-require_once(__DIR__ . '/../helbers/db.php');
+require_once(__DIR__ . '/../helpers/db.php');
 
 class KadaiTheme
 {
@@ -17,7 +17,7 @@ class KadaiTheme
    */
   public function findAll():array
   {
-    $sql = 'SELECT kadai_id, kadai_name FROM kadai_theme ORDER BY kadai_id ASC';
+    $sql = 'SELECT kadai_no, kadai_name FROM kadai_theme ORDER BY kadai_no ASC';
     $stmt = $this->pdo->prepare($sql);
     $stmt->execute();
     return $stmt->fetchAll(PDO::FETCH_ASSOC);
