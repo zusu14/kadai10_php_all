@@ -8,6 +8,9 @@
 </head>
 <body>
   <h1>課題テーマ一覧</h1>
+  <nav>
+    <p><a href="index.php?page=developers">開発者一覧を見る</a></p>
+  </nav>
   <ul>
     <?php foreach ($kadai_themes as $kadai_theme): ?>      
     <li>
