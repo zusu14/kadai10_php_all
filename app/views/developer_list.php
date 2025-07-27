@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>開発者一覧</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../public/css/style.css">
 </head>
 <body>
   <h1>開発者一覧</h1>

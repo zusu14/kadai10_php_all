@@ -1,7 +1,7 @@
 <?php
 
-require_once(__DIR__ . '../models/KadaiTheme.php');
-require_once(__DIR__ . '../models/Kadai.php');
+require_once(__DIR__ . '/../models/KadaiTheme.php');
+require_once(__DIR__ . '/../models/Kadai.php');
 
 class KadaiThemeController
 {
@@ -20,7 +20,7 @@ class KadaiThemeController
   public function index()
   {
     $kadai_themes = $this->kadaiThemeModel->findAll();
-
+    
     // viewを呼ぶ
     include(__DIR__ . '/../views/kadai_theme_list.php');
   }

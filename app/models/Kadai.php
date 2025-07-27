@@ -47,7 +47,7 @@
    * @param int $kadai_no 課題テーマNo
    * @return array|null 開発者情報の連想配列
    */
-  public function findDeveloperByKadaiNo(int $kadai_no)?:array
+  public function findDeveloperByKadaiNo(int $kadai_no):?array
   {
     $sql = 'SELECT d.id, d.name, k.kadai_no FROM developer d
             INNER JOIN kadai k ON k.developer_id = d.id
