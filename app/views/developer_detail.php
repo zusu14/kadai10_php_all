@@ -16,5 +16,8 @@
       </li>
     <?php endforeach; ?>
   </ul>
+
+  <p><a href="index.php?page=developers">開発者一覧に戻る</a></p>
+
 </body>
 </html>
