@@ -5,7 +5,7 @@ title: Comment Board
 ---
 erDiagram
     DEVELOPER ||--o{ KADAI: creates
-    KADAI ||--o{ KADAI_THEME : categorizes
+    KADAI_THEME ||--o{ KADAI : categorizes
     KADAI ||--o{ COMMENT : receives
     USER ||--o{ COMMENT : posts
     DEVELOPER{
